@@ -1,23 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI Legal Assistant</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app-container">
+  <div class="container">
     <h1>AI Legal Assistant</h1>
-    <p class="disclaimer">This tool provides general information only. <strong>This is not legal advice.</strong></p>
-    <textarea id="user-input" placeholder="Ask your legal question..."></textarea>
+    <p class="disclaimer">
+      This tool provides general information only. <strong>This is not legal advice.</strong>
+    </p>
+    <textarea id="user-input" placeholder="Enter your legal question..."></textarea>
     <button id="submit-btn">Submit</button>
-    <div id="response-container">
-      <div id="loading" class="hidden">Thinking...</div>
-      <div id="response-output"></div>
-    </div>
+    <div id="loading" class="hidden">Loading...</div>
+    <div id="response-output"></div>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
+
