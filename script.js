@@ -12,7 +12,8 @@ submitBtn.addEventListener("click", async () => {
   loading.classList.remove("hidden");
 
   try {
-    const res = await fetch("https://your-backend-url.onrender.com/api/legal", {
+    const res = await fetch("https://legal-assistant-backend-la97.onrender.com/api/legal", {
+ {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question })
