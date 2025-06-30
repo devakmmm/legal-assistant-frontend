@@ -12,13 +12,12 @@ submitBtn.addEventListener("click", async () => {
   loading.classList.remove("hidden");
 
   try {
-    const res = await fetch("https://legal-assistant-backend-la97.onrender.com/api/legal", {
- {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question })
+   const res = await fetch("https://legal-assistant-backend-la97.onrender.com/api/legal", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ question })
+});
 
-    });
 
     const data = await res.json();
     responseOutput.innerHTML = data.response.replace(/\n/g, "<br>");
